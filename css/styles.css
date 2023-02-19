@@ -1,0 +1,30 @@
+body {
+    padding: 50px 100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item {
+    border: 1px solid #000;
+    padding: 15px;
+    background-color: grey;
+    color: #fff;
+}
+
+.box {
+    display: grid;
+
+    /* grid-template-columns: 200px 300px 15% auto; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: repeat(3, 400px); */
+    grid-template-columns: [one] 400px [two] 400px [item3] 400px [item4];
+
+    grid-template-rows: 100px 200px 150px;
+
+    /* column-gap: 20px; */
+    /* row-gap: 10px; */
+    /* gap: 10px 20px; */
+    gap: 20px;
+}
+
